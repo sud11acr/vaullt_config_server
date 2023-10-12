@@ -1,0 +1,16 @@
+server:
+  port: 8083
+spring:
+  data:
+    mongodb:
+      database: creditPayment
+      host: localhost
+      port: 27017
+url:
+  credit: http://localhost:8086/credit
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8098/eureka/
