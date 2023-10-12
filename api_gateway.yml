@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: account
+          uri: lb://account
+          predicates:
+            - Path=/account/**
+          filters:
+            - StripPrefix=1
+        - id: credit_card
+          uri: lb://credit_card
+          predicates:
+            - Path=/creditcard/**
+          filters:
+            - StripPrefix=1
