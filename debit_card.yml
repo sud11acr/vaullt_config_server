@@ -1,0 +1,14 @@
+server:
+  port: 9092
+spring:
+  data:
+    mongodb:
+      database: debitcard
+      host: localhost
+      port: 27017
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8098/eureka/
