@@ -1,0 +1,17 @@
+server:
+  port: 8083
+spring:
+  data:
+    mongodb:
+      database: account
+      host: localhost
+      port: 27017
+url:
+  credit:
+    card: http://localhost:8087/creditcard
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8098/eureka/
