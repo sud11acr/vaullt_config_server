@@ -1,3 +1,9 @@
+server:
+  port: 9995
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8098/eureka/
 spring:
   cloud:
     gateway:
