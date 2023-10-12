@@ -3,7 +3,7 @@ server:
 spring:
   data:
     mongodb:
-      database: customer
+      database: customer3333
       host: localhost
       port: 27017
 eureka:
