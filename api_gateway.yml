@@ -20,3 +20,57 @@ spring:
             - Path=/creditcard/**
           filters:
             - StripPrefix=1
+        - id: credit_card
+          uri: lb://credit_card
+          predicates:
+            - Path=/creditcard/**
+          filters:
+            - StripPrefix=1
+        - id: asignatory
+          uri: lb://asignatory
+          predicates:
+            - Path=/authorizedSignatories/**
+          filters:
+            - StripPrefix=1
+        - id: movement_account
+          uri: lb://movement_account
+          predicates:
+            - Path=/movementaccount/**
+          filters:
+            - StripPrefix=1
+        - id: debit_card
+          uri: lb://debit_card
+          predicates:
+            - Path=/debitcard/**
+          filters:
+            - StripPrefix=1
+        - id: consumption_credit_card
+          uri: lb://consumption_credit_card
+          predicates:
+            - Path=/consumptionCreditCard/**
+          filters:
+            - StripPrefix=1
+        - id: credit_payment
+          uri: lb://credit_payment
+          predicates:
+            - Path=/creditpayment/**
+          filters:
+            - StripPrefix=1
+        - id: credits
+          uri: lb://credits
+          predicates:
+            - Path=/credit/**
+          filters:
+            - StripPrefix=1
+        - id: bussines_owner
+          uri: lb://bussines_owner
+          predicates:
+            - Path=/bussinesowner/**
+          filters:
+            - StripPrefix=1
+        - id: customer
+          uri: lb://customer
+          predicates:
+            - Path=/customer/**
+          filters:
+            - StripPrefix=1
